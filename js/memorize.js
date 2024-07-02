@@ -1,5 +1,3 @@
-"use strict";
-
 function gameStart() {
 
   // @description Create a list that holds all of your cards
@@ -190,7 +188,7 @@ function cardLogic() {
         stars.children[0].children[0].classList.add('fa-star-o');
         loosingStar();
 
-        popupMsg.innerText = "! Continua !";
+        popupMsg.innerText = "! Intentalo de nuevo !";
         popupStars.children[0].remove();
         prize.innerHTML = `<i class="fa fa-3x fa-gift"></i>`;
         break;

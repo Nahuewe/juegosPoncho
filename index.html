@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Nahuel Soria Parodi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Juegos Interactivos</title>
 </head>
-<body>
-    
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/250" alt="Imagen 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Memorize</h2>
+                    <a href="./pages/memorize.html" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 card-link">Jugar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/250" alt="Imagen 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Rompecabezas</h2>
+                    <a href="./pages/rompecabeza.html" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 card-link">Jugar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/250" alt="Imagen 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Juego 3</h2>
+                    <a href="./pages/memorize.html" class="btn btn-primary">Jugar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://via.placeholder.com/250" alt="Imagen 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Juego 4</h2>
+                    <a href="./pages/memorize.html" class="btn btn-primary">Jugar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
