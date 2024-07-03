@@ -1,21 +1,23 @@
 body {
-  background: #c1d72e;
+  background: #f0f8ff; /* Un color de fondo más suave y agradable */
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff;
+  color: #333; /* Mejor contraste */
   height: 100%;
   text-align: center;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
-.wrappper::after {
+.wrapper::after {
   content: "";
   display: table;
   clear: both;
 }
 
 canvas {
-  color: #fff;
-  border: #fff dashed 2px;
+  color: #333;
+  border: #333 dashed 2px;
   padding: 15px;
 }
 
@@ -47,23 +49,31 @@ p {
   max-width: 900px;
 }
 
+#alphabet {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0;
+}
+
 #alphabet li {
-  float: left;
-  margin: 0 10px 10px 0;
+  margin: 5px;
   list-style: none;
   width: 35px;
-  height: 30px;
-  padding-top: 10px;
+  height: 35px;
+  line-height: 35px;
   background: #fff;
-  color: #c1d72e;
+  color: #333;
   cursor: pointer;
   border-radius: 5px;
-  border: solid 1px #fff;
+  border: solid 1px #333;
+  text-align: center;
 }
 
 #alphabet li:hover {
-  background: #c1d72e;
-  border: solid 1px #fff;
+  background: #333;
+  border: solid 1px #333;
   color: #fff;
 }
 
@@ -85,16 +95,11 @@ p {
 .active {
   opacity: 0.4;
   filter: alpha(opacity=40);
-  -moz-transition: all 1s ease-in;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: default;
 }
 
 .active:hover {
-  -moz-transition: all 1s ease-in;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
@@ -107,25 +112,22 @@ p {
 
 button {
   border-radius: 5px;
-  background: #c1d72e;
+  background: #333;
   color: #fff;
-  border: solid 1px #fff;
+  border: solid 1px #333;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.2em;
-  padding: 18px 10px;
-  width: 180px;
+  padding: 10px 20px;
   margin: 10px;
   outline: none;
 }
 
 button:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #fff;
-  border: solid 1px #fff;
-  color: #c1d72e;
+  border: solid 1px #333;
+  color: #333;
 }
 
 @media (max-width: 767px) {

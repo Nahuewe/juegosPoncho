@@ -2,7 +2,8 @@ function gameStart() {
 
   // @description Create a list that holds all of your cards
 
-  const cards = ["diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"];
+  // const cards = ["diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"];
+  const cards = ["flag", "tree", "diamond", "trophy", "leaf", "bomb", "bank", "bicycle"];
   const cardList = cards.concat(cards);
 
   /*===================
@@ -170,7 +171,7 @@ function cardLogic() {
 
         loosingStar();
 
-        popupMsg.innerText = "¡ Bien hecho !";
+        popupMsg.innerText = "¡Bien hecho!";
         popupStars.children[2].remove();
         prize.innerHTML = `<i class="fa fa-3x fa-trophy"></i>`;
         break;
@@ -179,7 +180,7 @@ function cardLogic() {
         stars.children[1].children[0].classList.add('fa-star-o');
         loosingStar();
 
-        popupMsg.innerText = "! No está mal !";
+        popupMsg.innerText = "!No está mal!";
         popupStars.children[1].remove();
         prize.innerHTML = `<i class="fa fa-3x fa-trophy"></i>`;
         break;
@@ -188,7 +189,7 @@ function cardLogic() {
         stars.children[0].children[0].classList.add('fa-star-o');
         loosingStar();
 
-        popupMsg.innerText = "! Intentalo de nuevo !";
+        popupMsg.innerText = "!Intentalo de nuevo!";
         popupStars.children[0].remove();
         prize.innerHTML = `<i class="fa fa-3x fa-gift"></i>`;
         break;

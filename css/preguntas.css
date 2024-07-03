@@ -1,0 +1,116 @@
+* {
+    transition: all 0.3s;
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el tamaño total */
+}
+
+body {
+    background: cadetblue;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: calibri;
+    font-size: 120%;
+}
+
+.contenedor {
+    width: 98vw;
+    height: 97vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+.categoria {
+    opacity: 0.3;
+    text-align: left;
+}
+
+.pregunta {
+    padding: 10px;
+    text-align: left; /* Alineación del texto */
+}
+
+.btn {
+    background: white;
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent; /* Borde transparente */
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Transiciones */
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Cambio de color al hacer hover */
+    transform: scale(1.05); /* Efecto de escala */
+    border-color: #ccc; /* Cambio de color del borde */
+}
+
+.numero {
+    opacity: 0.3;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.puntaje {
+    padding: 10px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #001C2B;
+    padding: 10px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.inicio {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0c65e9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.inicio:hover {
+    background-color: #e65c55;
+    transform: scale(1.1);
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        width: 100%;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}
